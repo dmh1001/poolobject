@@ -93,9 +93,7 @@ public class ReusablePoolTest {
 			for(int i = 0; i <= TAMANO; i++) {
 				Reusable r = instancia.acquireReusable();
 			}
-			
-			assertTrue(false);
-			
+			assertTrue(false);		
 		}catch(NotFreeInstanceException e) {
 			assertTrue(true);		
 		}
